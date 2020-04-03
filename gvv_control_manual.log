@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.13)  3 APR 2020 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.13)  3 APR 2020 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -987,32 +987,73 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 
 (./chapters/ee18btech11003.tex
-Overfull \hbox (206.85558pt too wide) in paragraph at lines 93--94
+Overfull \hbox (206.85558pt too wide) in paragraph at lines 71--72
  [] 
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 115--116
+Overfull \hbox (206.85558pt too wide) in paragraph at lines 140--141
+ [] 
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 155--156
 \OT1/txr/m/n/12 tem(NUFS) in closed loop trans-fer func-
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 115--116
+Underfull \hbox (badness 2158) in paragraph at lines 155--156
 \OT1/txr/m/n/12 with Neg-a-tive Unity Feed-back Sys-tem in
  []
 
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+Overfull \hbox (206.85558pt too wide) in paragraph at lines 204--205
+ [] 
+ []
+
+
+Overfull \hbox (206.85558pt too wide) in paragraph at lines 253--254
+ [] 
+ []
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (206.85558pt too wide) in paragraph at lines 303--304
+ [] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]) [2
 
 ]
 (./gvv_control_manual.aux) ) 
 Here is how much of TeX's memory you used:
- 23428 strings out of 494880
- 523636 string characters out of 6179601
- 644953 words of memory out of 5000000
- 26339 multiletter control sequences out of 15000+600000
+ 23433 strings out of 494880
+ 523771 string characters out of 6179601
+ 657989 words of memory out of 5000000
+ 26344 multiletter control sequences out of 15000+600000
  64748 words of font info for 139 fonts, out of 8000000 for 9000
  39 hyphenation exceptions out of 8191
- 55i,8n,54p,510b,926s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,54p,510b,928s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base
 /8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/tex
@@ -1022,10 +1063,10 @@ ype1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_control_manual.pdf (1 page, 57276 bytes).
+Output written on gvv_control_manual.pdf (2 pages, 59410 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
