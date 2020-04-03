@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.13)  3 APR 2020 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.13)  3 APR 2020 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,7 +23,7 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
--- Using DVI output.
+-- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 12 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen106
@@ -438,10 +438,10 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
@@ -478,21 +478,20 @@ ex
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-dvips.def
+Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.def
-File: pgfsys-dvips.def 2014/07/09  (rcs-revision 1.25)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-postsc
-ript.def
-File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
-\pgf@objectcount=\count131
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count132
-\pgfsyssoftpath@bigbuffer@items=\count133
+\pgfsyssoftpath@smallbuffer@items=\count131
+\pgfsyssoftpath@bigbuffer@items=\count132
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -503,8 +502,9 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -521,7 +521,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen167
-\pgfmath@count=\count134
+\pgfmath@count=\count133
 \pgfmath@box=\box36
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
@@ -545,7 +545,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count135
+\c@pgfmathroundto@lastzeros=\count134
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -583,7 +583,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box37
 \pgf@hbox=\box38
 \pgf@layerbox@main=\box39
-\pgf@picture@serial@count=\count136
+\pgf@picture@serial@count=\count135
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -616,7 +616,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen191
-\pgf@sys@shading@range@num=\count137
+\pgf@sys@shading@range@num=\count136
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -673,7 +673,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count138
+\pgf@plot@mark@count=\count137
 \pgfplotmarksize=\dimen196
 )
 \tikz@lastx=\dimen197
@@ -686,18 +686,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box43
 \tikz@tempbox=\box44
 \tikz@tempbox@bg=\box45
-\tikztreelevel=\count139
-\tikznumberofchildren=\count140
-\tikznumberofcurrentchild=\count141
-\tikz@fig@count=\count142
+\tikztreelevel=\count138
+\tikznumberofchildren=\count139
+\tikznumberofcurrentchild=\count140
+\tikz@fig@count=\count141
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count143
-\pgfmatrixcurrentcolumn=\count144
-\pgf@matrix@numberofcolumns=\count145
+\pgfmatrixcurrentrow=\count142
+\pgfmatrixcurrentcolumn=\count143
+\pgf@matrix@numberofcolumns=\count144
 )
-\tikz@expandcount=\count146
+\tikz@expandcount=\count145
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -762,7 +762,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
-\c@tracingmulticols=\count147
+\c@tracingmulticols=\count146
 
 
 Package multicol Warning: May not work with the twocolumn option on input line 
@@ -770,11 +770,11 @@ Package multicol Warning: May not work with the twocolumn option on input line
 
 \mult@box=\box46
 \multicol@leftmargin=\dimen272
-\c@unbalance=\count148
-\c@collectmore=\count149
-\doublecol@number=\count150
-\multicoltolerance=\count151
-\multicolpretolerance=\count152
+\c@unbalance=\count147
+\c@collectmore=\count148
+\doublecol@number=\count149
+\multicoltolerance=\count150
+\multicolpretolerance=\count151
 \full@width=\dimen273
 \page@free=\dimen274
 \premulticols=\dimen275
@@ -805,22 +805,23 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \@tempa=\box67
 \@tempa=\box68
 \@tempa=\box69
-\c@columnbadness=\count153
-\c@finalcolumnbadness=\count154
+\c@columnbadness=\count152
+\c@finalcolumnbadness=\count153
 \last@try=\dimen278
 \multicolovershoot=\dimen279
 \multicolundershoot=\dimen280
 \mult@nat@firstbox=\box70
 \colbreak@box=\box71
-\mc@col@check@num=\count155
+\mc@col@check@num=\count154
 ) (/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-No file gvv_control_manual.aux.
+(./gvv_control_manual.aux)
 \openout1 = `gvv_control_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 83.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 83.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
@@ -879,111 +880,152 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\c@theorem=\count156
-\c@problem=\count157
-\c@proposition=\count158
-\c@lemma=\count159
-\c@example=\count160
-\c@rem=\count161
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count155
+\scratchdimen=\dimen281
+\scratchbox=\box72
+\nofMPsegments=\count156
+\nofMParguments=\count157
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count158
+\MPscratchDim=\dimen282
+\MPnumerator=\count159
+\makeMPintoPDFobject=\count160
+\everyMPtoPDFconversion=\toks45
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-No file gvv_control_manual.toc.
-\tf@toc=\write4
-\openout4 = `gvv_control_manual.toc'.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(./chapters/ee18btech11003.tex
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 24.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@theorem=\count161
+\c@problem=\count162
+\c@proposition=\count163
+\c@lemma=\count164
+\c@example=\count165
+\c@rem=\count166
+
+(./gvv_control_manual.toc
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 24.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 24.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 24.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 24.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
-File: ./figs/pic1.eps Graphic file (type eps)
- <./figs/pic1.eps>
-Overfull \hbox (160.80157pt too wide) in paragraph at lines 30--31
- [][] 
- []
+))
+\tf@toc=\write4
+\openout4 = `gvv_control_manual.toc'.
 
-File: ./figs/pic2.eps Graphic file (type eps)
-<./figs/pic2.eps>
-Overfull \hbox (160.80157pt too wide) in paragraph at lines 58--59
- [][] 
- []
 
-File: ./figs/pic3.eps Graphic file (type eps)
-<./figs/pic3.eps>
-Overfull \hbox (160.80157pt too wide) in paragraph at lines 68--69
- [][] 
+(./chapters/ee18btech11003.tex
+Overfull \hbox (206.85558pt too wide) in paragraph at lines 93--94
+ [] 
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 75--76
+Underfull \hbox (badness 2707) in paragraph at lines 115--116
 \OT1/txr/m/n/12 tem(NUFS) in closed loop trans-fer func-
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 75--76
+Underfull \hbox (badness 2158) in paragraph at lines 115--116
 \OT1/txr/m/n/12 with Neg-a-tive Unity Feed-back Sys-tem in
  []
 
-File: ./figs/pic4.eps Graphic file (type eps)
-<./figs/pic4.eps>
-Overfull \hbox (160.80157pt too wide) in paragraph at lines 84--85
- [][] 
- []
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-File: ./figs/pic5.eps Graphic file (type eps)
-<./figs/pic5.eps>
-Overfull \hbox (160.80157pt too wide) in paragraph at lines 94--95
- [][] 
- []
-
-File: ./figs/pic6.eps Graphic file (type eps)
-<./figs/pic6.eps>
-Overfull \hbox (160.80157pt too wide) in paragraph at lines 105--106
- [][] 
- []
-
-File: ./figs/pic8.eps Graphic file (type eps)
-<./figs/pic8.eps>
-Overfull \hbox (160.80157pt too wide) in paragraph at lines 113--114
- [][] 
- []
-
-[1
-
-]) [2
-
-] (./gvv_control_manual.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+]
+(./gvv_control_manual.aux) ) 
 Here is how much of TeX's memory you used:
- 22392 strings out of 494881
- 506394 string characters out of 6179627
- 633113 words of memory out of 5000000
- 25359 multiletter control sequences out of 15000+600000
- 54754 words of font info for 123 fonts, out of 8000000 for 9000
+ 23428 strings out of 494880
+ 523636 string characters out of 6179601
+ 644953 words of memory out of 5000000
+ 26339 multiletter control sequences out of 15000+600000
+ 64748 words of font info for 139 fonts, out of 8000000 for 9000
  39 hyphenation exceptions out of 8191
- 55i,8n,54p,510b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,54p,510b,926s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base
+/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gvv_control_manual.pdf (1 page, 57276 bytes).
+PDF statistics:
+ 48 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on gvv_control_manual.dvi (2 pages, 10168 bytes).
