@@ -13,8 +13,42 @@
 \solution
 Signal flow graph of given above block diagram is
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/signal_flow.eps}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (1cm,0) {};
+\node[terminal={below}{$N_2$}] (c) at (2cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (5cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (6cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (7.8cm,0) {};
+\node[terminal={below}{$Y(s)$}] (g) at (8.8cm,0) {};
+%Draw the connections
+\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+\draw[amark=$s$] (c) to[bend left=45] (d);
+\draw[amark=$1/s$] (e) to (f);
+\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+\draw[amark=$-1$] (e) to[bend left=-60] (b);
+\draw[amark=$-1$,label revd] (f) to[bend left=60] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
 \caption{signal flow graph}
 \label{fig:sec_order}
 \end{figure}
@@ -29,9 +63,43 @@ P_1=\frac{s}{s}=1
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/P1.eps}
-\caption{P1}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below }{$N_1$}] (b) at (1cm,0) {};
+\node[terminal={below }{$N_2$}] (c) at (2cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (4cm,0) {};
+\node[terminal={below }{$N_4$}] (e) at (6cm,0) {};
+\node[terminal={below }{$N_5$}] (f) at (8cm,0) {};
+\node[terminal={below }{$Y(s)$}] (g) at (9.5cm,0) {};
+%Draw the connections
+\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+\draw[amark=$s$] (c) to[bend left=45] (d);
+\draw[amark=$1/s$] (e) to (f);
+\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+%\draw[amark=$-1$] (e) to[bend left=-45] (b);
+%\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$P_1$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -41,9 +109,43 @@ P_2=(1/s)(1/s)=1/s^2
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/P2.eps}
-\caption{P2}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below }{$N_1$}] (b) at (1cm,0) {};
+\node[terminal={below }{$N_2$}] (c) at (2cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (4cm,0) {};
+\node[terminal={below }{$N_4$}] (e) at (6cm,0) {};
+\node[terminal={below }{$N_5$}] (f) at (8cm,0) {};
+\node[terminal={below }{$Y(s)$}] (g) at (9.5cm,0) {};
+%Draw the connections
+\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+\draw[amark=$1/s$] (e) to (f);
+\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+%\draw[amark=$-1$] (e) to[bend left=-45] (b);
+%\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$P_2$}
 \label{fig:sec_order}
 \end{figure}
 \renewcommand{\thefigure}{\theenumi}
@@ -56,9 +158,43 @@ L_1=(-1)(s)=-s
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/L1.eps}
-\caption{L1}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below }{$N_1$}] (b) at (2cm,0) {};
+\node[terminal={below }{$N_2$}] (c) at (4cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below }{$N_4$}] (e) at (8cm,0) {};
+%\node[terminal={below left}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+\draw[amark=$s$] (c) to[bend left=45] (d);
+%\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+\draw[amark=$-1$] (e) to[bend left=-45] (b);
+%\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$L_1$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -68,9 +204,43 @@ L_2=\frac{s}{-s}=-1
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/L2.eps}
-\caption{L2}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+\draw[amark=$s$] (c) to[bend left=45] (d);
+\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+%\draw[amark=$-1$] (e) to[bend left=-45] (b);
+\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$L_2$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -80,9 +250,43 @@ L_3=(\frac{1}{s})*(-1)=\frac{-1}{s}
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/L3.eps}
-\caption{L3}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+%\node[terminal={below left}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+%\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+\draw[amark=$-1$] (e) to[bend left=-45] (b);
+%\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$L_3$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -92,11 +296,46 @@ L_4=(\frac{1}{s})(\frac{1}{s})(-1)=\frac{-1}{s^2}
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/L4.eps}
-\caption{L4}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below }{$N_1$}] (b) at (2cm,0) {};
+\node[terminal={below }{$N_2$}] (c) at (4cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+%\draw[amark=$-1$] (e) to[bend left=-45] (b);
+\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$L_4$}
 \label{fig:sec_order}
 \end{figure}
+
 \renewcommand{\thefigure}{\theenumi}
 
 \item State Mason's Gain formula and explain the parameters through a table.
@@ -150,9 +389,43 @@ L_1=(-1)(s)=-s
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/L1.eps}
-\caption{L1}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+%\node[terminal={below left}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+\draw[amark=$s$] (c) to[bend left=45] (d);
+%\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+\draw[amark=$-1$] (e) to[bend left=-45] (b);
+%\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$L_1$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -162,9 +435,43 @@ L_2=\frac{s}{-s}=-1
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/L2.eps}
-\caption{L2}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+\draw[amark=$s$] (c) to[bend left=45] (d);
+\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+%\draw[amark=$-1$] (e) to[bend left=-45] (b);
+\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$L_2$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -174,9 +481,43 @@ L_3=(\frac{1}{s})*(-1)=\frac{-1}{s}
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/L3.eps}
-\caption{L3}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+%\node[terminal={below left}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+%\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+\draw[amark=$-1$] (e) to[bend left=-45] (b);
+%\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$L_3$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -186,9 +527,43 @@ L_4=(\frac{1}{s})(\frac{1}{s})(-1)=\frac{-1}{s^2}
 \end{align}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/L4.eps}
-\caption{L4}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+\draw[amark=$ $] (d) to (e);
+\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+%\draw[amark=$-1$] (e) to[bend left=-45] (b);
+\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$L_4$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -197,9 +572,43 @@ $\Delta = 1-(-s-1-\frac{1}{s}-\frac{1}{s^2})$
 $\Delta = \frac{s^3+2s^2+s+1}{s^2}$
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/Delta1.eps}
-\caption{Delta1}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+%\node[terminal={below left}{$N_2$}] (c) at (4cm,0) {};
+%\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+%\node[terminal={below left}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+%\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+%\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+%\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+\draw[amark=$-1$] (e) to[bend left=-45] (b);
+%\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$\Delta_1$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -208,9 +617,43 @@ After removing forward path from loop1 we will get Delta1
 $\Delta_1 = 1$
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/Delta2.eps}
-\caption{Delta2}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+%\node[terminal={below left}{$N_2$}] (c) at (4cm,0) {};
+%\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+%\node[terminal={below right}{$N_4$}] (e) at (8cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+%\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+%\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+%\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+%\draw[amark=$-1$] (e) to[bend left=-45] (b);
+\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$\Delta_2$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -219,9 +662,43 @@ After removing forward path from loop2 we will get Delta2
 $\Delta_2 = 1$
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/Delta3.eps}
-\caption{Delta3}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+%\node[terminal={below left}{$N_2$}] (c) at (4cm,0) {};
+%\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
+%\node[terminal={below left}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+%\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+%\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+%\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+\draw[amark=$-1$] (e) to[bend left=-45] (b);
+%\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$\Delta_3$}
 \label{fig:sec_order}
 \end{figure}
 
@@ -230,9 +707,43 @@ After removing forward path from loop3 we will get Delta4
 $\Delta_3 = 1$
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.3\textwidth]{./figs/Delta4.eps}
-\caption{Delta4}
+\begin{tikzpicture}
+[
+label revd/.is if=labrev,
+amark/.style={
+            decoration={             
+                        markings,   
+                        mark=at position {0.5} with { 
+                                    \arrow{stealth},
+                                    \iflabrev \node[above] {#1};\else \node[below] {#1};\fi
+                        }
+            },
+            postaction={decorate}
+},
+terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
+]
+
+%Place the nodes
+%\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
+\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
+%\node[terminal={below left}{$N_2$}] (c) at (4cm,0) {};
+%\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
+%\node[terminal={below right}{$N_4$}] (e) at (8cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+%\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
+%Draw the connections
+%\draw[amark=$ $] (a) to (b);
+%\draw[amark=$ $] (b) to (c);
+%\draw[amark=$s$] (c) to[bend left=45] (d);
+%\draw[amark=$1/s$] (e) to (f);
+%\draw[amark=$ $] (f) to (g);
+%\draw[amark=$ $] (d) to (e);
+%\draw[amark=$1/s$] (c) to[bend left=-45] (d);
+%\draw[amark=$-1$] (e) to[bend left=-45] (b);
+\draw[amark=$-1$,label revd] (f) to[bend left=50] (b);
+%\draw[amark=$-K/M$,label revd] (e) to[bend right=50] (c);
+\end{tikzpicture}
+\caption{$\Delta_4$}
 \label{fig:sec_order}
 \end{figure}
 
