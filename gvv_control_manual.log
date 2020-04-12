@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.13)  11 APR 2020 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.13)  12 APR 2020 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,41 +935,7 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 4.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-File: ./figs/pic1.eps Graphic file (type eps)
- <./figs/pic1.eps>
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-
-Overfull \hbox (27.52145pt too wide) in paragraph at lines 51--52
-[][] 
- []
-
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-
-Overfull \hbox (47.4383pt too wide) in paragraph at lines 101--102
-[][] 
- []
-
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-
-Overfull \hbox (47.4383pt too wide) in paragraph at lines 147--148
+Overfull \hbox (203.35962pt too wide) in paragraph at lines 46--47
 [][] 
  []
 
@@ -983,7 +949,29 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (24.87793pt too wide) in paragraph at lines 242--243
+Overfull \hbox (27.52145pt too wide) in paragraph at lines 88--89
+[][] 
+ []
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+
+Overfull \hbox (47.4383pt too wide) in paragraph at lines 138--139
+[][] 
+ []
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+
+Overfull \hbox (47.4383pt too wide) in paragraph at lines 184--185
 [][] 
  []
 
@@ -996,15 +984,19 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-
-Overfull \hbox (24.87793pt too wide) in paragraph at lines 334--335
-[][] 
- []
-
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
 [1
 
 ]
-Underfull \hbox (badness 4531) in paragraph at lines 380--381
+Underfull \hbox (badness 4531) in paragraph at lines 417--418
 []$\OT1/txr/m/n/12 ^^A$ = 1 - (Sum of all in-di-vid-ual loop
  []
 
@@ -1017,41 +1009,30 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
 
-Overfull \hbox (24.87793pt too wide) in paragraph at lines 473--474
+Overfull \hbox (24.87793pt too wide) in paragraph at lines 692--693
 [][] 
  []
 
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
 
-Overfull \hbox (24.87793pt too wide) in paragraph at lines 565--566
+Overfull \hbox (24.87793pt too wide) in paragraph at lines 782--783
 [][] 
  []
 
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-
-Overfull \hbox (24.87793pt too wide) in paragraph at lines 655--656
-[][] 
- []
-
-Missing character: There is no , in font nullfont!
-[2]
-Missing character: There is no , in font nullfont!
-
-Overfull \hbox (24.87793pt too wide) in paragraph at lines 745--746
-[][] 
- []
-
-) [3
+[2]) [3
 
 ] (./gvv_control_manual.aux)
 
@@ -1059,12 +1040,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 23031 strings out of 494881
- 525745 string characters out of 6179627
- 694843 words of memory out of 5000000
- 25991 multiletter control sequences out of 15000+600000
+ 23146 strings out of 494881
+ 527409 string characters out of 6179627
+ 704329 words of memory out of 5000000
+ 26109 multiletter control sequences out of 15000+600000
  54754 words of font info for 123 fonts, out of 8000000 for 9000
  39 hyphenation exceptions out of 8191
- 55i,9n,69p,510b,1185s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,69p,510b,1183s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (3 pages, 94616 bytes).
+Output written on gvv_control_manual.dvi (3 pages, 102844 bytes).

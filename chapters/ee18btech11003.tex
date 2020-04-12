@@ -5,9 +5,46 @@
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 
 \begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/pic1.eps}
-\caption{}
+    \tikzstyle{block} = [draw, fill=white, rectangle, 
+minimum height=2em, minimum width=3em]
+\tikzstyle{sum} = [draw, fill=white, circle, radius=1mm, node distance=1.5cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+\begin{tikzpicture}[auto, node distance=2cm,>=latex']
+\node [input, name=input] {};
+\node [sum, right of=input] (sum1) {$\sum$};
+\node [input, right of=sum1] (B1) {};
+\node [input, right of=B1] (B2) {};
+\node [block, below of=B2] (B3) {$\frac{1}{s}$};
+\node [block, above of=B2] (B4) {$s$};
+\node [sum, right of=B2] (B5) {$\sum$};
+\node [input, right of=B5] (B6) {};
+\node [input, above of=B6] (A1) {};
+\node [input, above of=A1] (A2) {};
+\node [block, right of=B6] (B7) {$\frac{1}{s}$};
+\node [input, right of=B7] (B8) {};
+\node [input, below of=B8] (A3) {};
+\node [input, below of=A3] (A4) {};
+\node [output, right of=B8] (output) {};
+
+\draw [->] (input)--node[pos=0.00]{$X(s)$} node[pos=0.99]{$+$}(sum1);
+\draw[-] (sum1)--(B1);
+\draw[->](B1) |- node[pos=0.99] {} (B4);
+\draw[->](B1) |- node[pos=0.99] {} (B3);
+\draw [->](B4) -| node[pos=0.99] {$+$} (B5);
+\draw [->](B3) -| node[pos=0.99] {$+$} (B5);
+\draw [->](B5)--(B7);
+\draw [-](B7)--(B8);
+\draw [->](B8)--node[pos=0.99] {$Y(s)$} (output);
+\draw [-](B6) -- (A2);
+\draw [->](A2) -| node[pos=0.99] {$-$} (sum1);
+\draw [-](B8)--(A4);
+\draw [->](A4) -| node[pos=0.99] {$-$} (sum1);
+
+\end{tikzpicture}
+\caption{signal flow graph}
 \label{fig:sec_order}
 \end{figure}
 \solution
@@ -222,11 +259,11 @@ terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
 
 %Place the nodes
 %\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
-\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
-\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
-\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
-\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
-\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+\node[terminal={below}{$N_1$}] (b) at (0,0) {};
+\node[terminal={below}{$N_2$}] (c) at (1cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (3cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (4cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (5.8cm,0) {};
 %\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
 %Draw the connections
 %\draw[amark=$ $] (a) to (b);
@@ -314,11 +351,11 @@ terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
 
 %Place the nodes
 %\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
-\node[terminal={below }{$N_1$}] (b) at (2cm,0) {};
-\node[terminal={below }{$N_2$}] (c) at (4cm,0) {};
-\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
-\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
-\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+\node[terminal={below }{$N_1$}] (b) at (0,0) {};
+\node[terminal={below }{$N_2$}] (c) at (1cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (3cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (4cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (5.8cm,0) {};
 %\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
 %Draw the connections
 %\draw[amark=$ $] (a) to (b);
@@ -453,11 +490,11 @@ terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
 
 %Place the nodes
 %\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
-\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
-\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
-\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
-\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
-\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+\node[terminal={below}{$N_1$}] (b) at (0,0) {};
+\node[terminal={below}{$N_2$}] (c) at (1cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (3cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (4cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (5.8cm,0) {};
 %\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
 %Draw the connections
 %\draw[amark=$ $] (a) to (b);
@@ -545,11 +582,11 @@ terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
 
 %Place the nodes
 %\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
-\node[terminal={below}{$N_1$}] (b) at (2cm,0) {};
-\node[terminal={below}{$N_2$}] (c) at (4cm,0) {};
-\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
-\node[terminal={below}{$N_4$}] (e) at (8cm,0) {};
-\node[terminal={below}{$N_5$}] (f) at (11cm,0) {};
+\node[terminal={below }{$N_1$}] (b) at (0,0) {};
+\node[terminal={below }{$N_2$}] (c) at (1cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (3cm,0) {};
+\node[terminal={below}{$N_4$}] (e) at (4cm,0) {};
+\node[terminal={below}{$N_5$}] (f) at (5.8cm,0) {};
 %\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
 %Draw the connections
 %\draw[amark=$ $] (a) to (b);
