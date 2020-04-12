@@ -12,7 +12,7 @@ minimum height=2em, minimum width=3em]
 \tikzstyle{output} = [coordinate]
 \tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
 
-\begin{tikzpicture}[auto, node distance=2cm,>=latex']
+\begin{tikzpicture}[auto,scale=0.10mm, node distance=1cm,>=latex']
 \node [input, name=input] {};
 \node [sum, right of=input] (sum1) {$\sum$};
 \node [input, right of=sum1] (B1) {};
@@ -37,14 +37,14 @@ minimum height=2em, minimum width=3em]
 \draw [->](B3) -| node[pos=0.99] {$+$} (B5);
 \draw [->](B5)--(B7);
 \draw [-](B7)--(B8);
-\draw [->](B8)--node[pos=0.99] {$Y(s)$} (output);
+\draw [->](B8)--node[pos=0.50] {$Y(s)$} (output);
 \draw [-](B6) -- (A2);
 \draw [->](A2) -| node[pos=0.99] {$-$} (sum1);
 \draw [-](B8)--(A4);
 \draw [->](A4) -| node[pos=0.99] {$-$} (sum1);
 
 \end{tikzpicture}
-\caption{signal flow graph}
+\caption{signal flow block diagram}
 \label{fig:sec_order}
 \end{figure}
 \solution
@@ -213,10 +213,10 @@ terminal/.style 2 args={draw,circle,inner sep=1pt,label={#1:#2}},
 
 %Place the nodes
 %\node[terminal={below}{$X(s)$}] (a) at (0,0) {};
-\node[terminal={below }{$N_1$}] (b) at (2cm,0) {};
-\node[terminal={below }{$N_2$}] (c) at (4cm,0) {};
-\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (6cm,0) {};
-\node[terminal={below }{$N_4$}] (e) at (8cm,0) {};
+\node[terminal={below }{$N_1$}] (b) at (6cm,0) {};
+\node[terminal={below }{$N_2$}] (c) at (7cm,0) {};
+\node[terminal={[xshift=-4mm]below right}{$N_3$}] (d) at (9cm,0) {};
+\node[terminal={below }{$N_4$}] (e) at (10cm,0) {};
 %\node[terminal={below left}{$N_5$}] (f) at (11cm,0) {};
 %\node[terminal={below left}{$Y(s)$}] (g) at (13cm,0) {};
 %Draw the connections

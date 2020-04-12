@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.13)  12 APR 2020 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.13)  12 APR 2020 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,7 +935,7 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 4.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Overfull \hbox (203.35962pt too wide) in paragraph at lines 46--47
+Overfull \hbox (19.00412pt too wide) in paragraph at lines 46--47
 [][] 
  []
 
@@ -1040,12 +1040,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 23146 strings out of 494881
- 527409 string characters out of 6179627
- 704329 words of memory out of 5000000
- 26109 multiletter control sequences out of 15000+600000
+ 23148 strings out of 494881
+ 527451 string characters out of 6179627
+ 705367 words of memory out of 5000000
+ 26111 multiletter control sequences out of 15000+600000
  54754 words of font info for 123 fonts, out of 8000000 for 9000
  39 hyphenation exceptions out of 8191
  55i,9n,69p,510b,1183s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (3 pages, 102844 bytes).
+Output written on gvv_control_manual.dvi (3 pages, 102860 bytes).
