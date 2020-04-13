@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.13)  12 APR 2020 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.13)  13 APR 2020 08:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,7 +935,8 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 4.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-(./figs/block_diagram.tex) (./figs/signal_flow.tex
+(./figs/ee18btech11003_block_diagram.tex)
+(./figs/ee18btech11003_signal_flow.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -945,7 +946,7 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-) (./figs/P1.tex
+) (./figs/ee18btech11003_P1.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -953,30 +954,32 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 )
-(./figs/P2.tex
+(./figs/ee18btech11003_P2.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-) (./figs/L1.tex
+) (./figs/ee18btech11003_L1.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-) (./figs/L2.tex
+)
+(./figs/ee18btech11003_L2.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-) (./figs/L3.tex
+) (./figs/ee18btech11003_L3.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-) (./figs/L4.tex
+)
+(./figs/ee18btech11003_L4.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -989,39 +992,41 @@ Underfull \hbox (badness 4531) in paragraph at lines 158--159
 []$\OT1/txr/m/n/12 ^^A$ = 1 - (Sum of all in-di-vid-ual loop
  []
 
-(./figs/L1.tex
+(./figs/ee18btech11003_L1.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-) (./figs/L2.tex
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-) (./figs/L3.tex
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-) (./figs/L4.tex
+) (./figs/ee18btech11003_L2.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 )
-(./figs/D1_D3.tex
+(./figs/ee18btech11003_L3.tex
 Missing character: There is no , in font nullfont!
-) (./figs/D2_D4.tex
 Missing character: There is no , in font nullfont!
-) (./figs/D1_D3.tex
 Missing character: There is no , in font nullfont!
-) (./figs/D2_D4.tex
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003_L4.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 )
-[2]) [3
+(./figs/ee18btech11003_D1_D3.tex
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003_D2_D4.tex
+Missing character: There is no , in font nullfont!
+)
+(./figs/ee18btech11003_D1_D3.tex
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003_D2_D4.tex
+Missing character: There is no , in font nullfont!
+) [2])
+[3
 
 ] (./gvv_control_manual.aux)
 
@@ -1030,8 +1035,8 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
  ) 
 Here is how much of TeX's memory you used:
  23172 strings out of 494881
- 527569 string characters out of 6179627
- 705352 words of memory out of 5000000
+ 528199 string characters out of 6179627
+ 705397 words of memory out of 5000000
  26092 multiletter control sequences out of 15000+600000
  54754 words of font info for 123 fonts, out of 8000000 for 9000
  39 hyphenation exceptions out of 8191
